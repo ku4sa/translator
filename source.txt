@@ -1,0 +1,24 @@
+PROGRAM
+VAR
+digit : INT;
+number : INT;
+count : INT;
+i: INT;
+end: INT;
+END_VAR
+digit := 12;
+WHILE (digit <> 0) DO
+number :=digit - 10;
+IF (number mod 4 <> 0)
+THEN
+count:=count+1;
+ELSE
+i:=i + 1;
+END_IF;
+digit := digit/10;
+END_WHILE;
+IF (count>i)
+THEN end:=1;
+ELSE end:=0;
+END_IF;
+END_PROGRAM
